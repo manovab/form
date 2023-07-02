@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form-like Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Google Form-like Demo</h1>
+    <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+        <br>
+        <label for="organization">Organization:</label>
+        <input type="text" id="organization" required>
+        <br>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    <h2>User Details:</h2>
+    <table id="submittedData">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email ID</th>
+                <th>Mobile Number</th>
+                <th>Address</th>
+                <th>Date of Birth</th>
+                <th>Organization</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="successPopup" class="success-popup">
+        <p>Record submitted successfully!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
